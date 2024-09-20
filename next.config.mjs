@@ -10,7 +10,6 @@ const nextConfig = {
         ignoreDuringBuilds: true
     }
     // Other configurations can go here if needed
-  };
-  
-  module.exports= nextConfig;
-  
+};
+
+export default nextConfig; // Use export default instead of module.exports
