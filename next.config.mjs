@@ -4,8 +4,6 @@ const nextConfig = {
       locales: ['en', 'ar'], // English and Arabic
       defaultLocale: 'en',
     },
-    // output: 'export',
-    // basePath: '/yaseer'
   };
   
   export default nextConfig;
