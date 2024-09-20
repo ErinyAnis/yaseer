@@ -17,7 +17,6 @@ import Features from "@/components/features/Features";
 import Services from "@/components/services/Services";
 import OurPartners from "@/components/ourPartners/OurPartners";
 import Packages from "@/components/packages/Packages";
-import Footer9 from "@/components/footers/Footer9";
 import FooterPreview from "@/components/footers/FooterPreview";
 import DeviderSec from "@/components/deviderSec/DeviderSec";
 
