@@ -39,5 +39,9 @@ export const contactItems = [
     title: "work hours",
     main_text: "ساعات العمل",
     text: "  من الاحد للخميس من ٨،٠٠ ص وحتى ٦،٠٠ م",
+    link: {
+      url: "",
+      text: "",
+    },
   },
 ];

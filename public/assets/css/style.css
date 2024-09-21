@@ -10741,6 +10741,7 @@ a.portfolio-5-link:hover .portfolio-5-title span {
   transition: var(--transition-default);
 }
 
+
 .contact-item a:hover {
   color: var(--color-dark-1);
   text-decoration: none;

@@ -106,26 +106,21 @@ export default function Contact() {
 
   return (
     <div className="container position-relative main-sec-padding contact-sec">
-      <div className="row align-items-center">
+      <div className="row">
         {/* Left Column */}
         <div className="col-lg-4 mb-md-50 mb-sm-30 position-relative z-index-1">
           <h2 className="section-caption-fancy mb-20 mb-xs-10">تواصل معنا</h2>
-          <h3 className="section-title mb-50 mb-sm-40">
+          <h3 className="section-title mb-50 mb-sm-30">
             دعنا نعرف كيف نساعدك.
           </h3>
           {/* Contact Information */}
           <div className="row">
-            {contactItems.map((item, index) => {
-              const isSecondToLast = index === contactItems.length - 2;
-              const isLast = index === contactItems.length - 1;
-
-              return (
+            <div className="col-md-11">
+              {contactItems.map((item, index) => (
                 <React.Fragment key={index}>
                   <div
-                    className={`contact-item col-6 col-lg-12 ${
-                      index !== 3 ? "mb-3" : ""
-                    } ${isSecondToLast ? "order-2 order-lg-1" : ""} ${
-                      isLast ? "order-1 order-lg-2" : ""
+                    className={`contact-item ${
+                      index !== 3 ? "mb-3 mb-lg-5" : ""
                     }`}
                   >
                     <div className="ci-icon">
@@ -137,46 +132,42 @@ export default function Contact() {
                     <h4 className="ci-title visually-hidden">{item.title}</h4>
                     <div className="ci-text">{item.text}</div>
                     <div>
-                      {item.link && item.link.url ? ( // Check if link and url exist
-                        <a
-                          href={item.link.url}
-                          target={item.link.target || "_self"}
-                          rel={item.link.rel || "noopener noreferrer"}
-                          className="link-hover-anim"
-                          data-link-animate="y"
-                        >
-                          <span className="link-strong link-strong-unhovered">
-                            {item.link.text || "Link"}{" "}
-                            <i
-                              className="mi-arrow-left size-18"
-                              aria-hidden="true"
-                            ></i>
-                          </span>
-                          <span
-                            className="link-strong link-strong-hovered"
+                      <a
+                        href={item.link.url}
+                        target={item.link.target}
+                        rel={item.link.rel}
+                        className="link-hover-anim"
+                        data-link-animate="y"
+                      >
+                        <span className="link-strong link-strong-unhovered">
+                          {item.link.text}{" "}
+                          <i
+                            className="mi-arrow-left size-18"
                             aria-hidden="true"
-                          >
-                            {item.link.text || "Link"}{" "}
-                            <i
-                              className="mi-arrow-right size-18"
-                              aria-hidden="true"
-                            ></i>
-                          </span>
-                        </a>
-                      ) : (
-                        <span></span> // Fallback if link or url is not provided
-                      )}
+                          ></i>
+                        </span>
+                        <span
+                          className="link-strong link-strong-hovered"
+                          aria-hidden="true"
+                        >
+                          {item.link.text}{" "}
+                          <i
+                            className="mi-arrow-right size-18"
+                            aria-hidden="true"
+                          ></i>
+                        </span>
+                      </a>
                     </div>
                   </div>
                 </React.Fragment>
-              );
-            })}
+              ))}
+            </div>
           </div>
         </div>
         {/* End Left Column */}
 
         {/* Right Column */}
-        <div className="col-lg-8">
+        <div className="col-lg-8 col-xl-7 offset-xl-1">
           <div className="position-relative">
             {/* Decorative Image */}
             <div className="decoration-11 d-none d-xl-block">
@@ -213,7 +204,7 @@ export default function Contact() {
                         }`}
                         placeholder="أدخل اسمك"
                         aria-required="true"
-                        onChange={handleInputChange}
+                        onChange={handleInputChange} // Add this line
                       />
                       {errors.user_name && (
                         <div className="invalid-feedback">
@@ -236,7 +227,7 @@ export default function Contact() {
                         }`}
                         placeholder="أدخل بريدك الإلكتروني"
                         aria-required="true"
-                        onChange={handleInputChange}
+                        onChange={handleInputChange} // Add this line
                       />
                       {errors.user_email && (
                         <div className="invalid-feedback">
@@ -258,7 +249,7 @@ export default function Contact() {
                     }`}
                     style={{ height: 130 }}
                     placeholder="أدخل رسالتك"
-                    onChange={handleInputChange}
+                    onChange={handleInputChange} // Add this line
                   />
                   {errors.message && (
                     <div className="invalid-feedback">{errors.message}</div>
@@ -280,11 +271,34 @@ export default function Contact() {
                   </div>
                   <div className="col-md-6 col-xl-7 d-flex align-items-center">
                     {/* Inform Tip */}
-                    <div className="form-message">
-                      <p>{message}</p>
+                    <div className="form-tip w-100 pt-3 mt-sm-20">
+                      <i className="icon-info size-16 ms-1" />
+                      جميع الحقول إلزامية. بإرسال النموذج، أنت توافق على{" "}
+                      <a href="#">الشروط &amp; والأحكام</a> و{" "}
+                      <a href="#">سياسة الخصوصية</a>.
                     </div>
                     {/* End Inform Tip */}
                   </div>
+                </div>
+                {/* Display Success/Error Message */}
+                <div
+                  id="result"
+                  role="region"
+                  aria-live="polite"
+                  aria-atomic="true"
+                  className="mt-3"
+                >
+                  {message && (
+                    <div
+                      className={`alert ${
+                        message.includes("فشل")
+                          ? "alert-danger"
+                          : "alert-success"
+                      }`}
+                    >
+                      {message}
+                    </div>
+                  )}
                 </div>
               </form>
               {/* End Contact Form */}
