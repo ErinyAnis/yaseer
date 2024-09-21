@@ -106,21 +106,21 @@ export default function Contact() {
 
   return (
     <div className="container position-relative main-sec-padding contact-sec">
-      <div className="row">
+      <div className="row align-items-center">
         {/* Left Column */}
         <div className="col-lg-4 mb-md-50 mb-sm-30 position-relative z-index-1">
           <h2 className="section-caption-fancy mb-20 mb-xs-10">تواصل معنا</h2>
-          <h3 className="section-title mb-50 mb-sm-30">
+          <h3 className="section-title mb-50 mb-sm-40">
             دعنا نعرف كيف نساعدك.
           </h3>
           {/* Contact Information */}
           <div className="row">
-            <div className="col-md-11">
+           
               {contactItems.map((item, index) => (
                 <React.Fragment key={index}>
                   <div
                     className={`contact-item ${
-                      index !== 3 ? "mb-3 mb-lg-5" : ""
+                      index !== 3 ? "mb-3" : ""
                     }`}
                   >
                     <div className="ci-icon">
@@ -161,13 +161,13 @@ export default function Contact() {
                   </div>
                 </React.Fragment>
               ))}
-            </div>
+      
           </div>
         </div>
         {/* End Left Column */}
 
         {/* Right Column */}
-        <div className="col-lg-8 col-xl-7 offset-xl-1">
+        <div className="col-lg-8">
           <div className="position-relative">
             {/* Decorative Image */}
             <div className="decoration-11 d-none d-xl-block">
