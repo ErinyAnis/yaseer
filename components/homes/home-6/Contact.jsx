@@ -137,36 +137,35 @@ export default function Contact() {
                     <h4 className="ci-title visually-hidden">{item.title}</h4>
                     <div className="ci-text">{item.text}</div>
                     <div>
-                      {item.link ? ( // Check if link exists
+                      {item.link && item.link.url ? ( // Check if link and url exist
                         <a
-                          href={item.link.url || "#"} // Fallback if URL is undefined
-                          target={item.link.target}
-                          rel={item.link.rel}
+                          href={item.link.url}
+                          target={item.link.target || "_self"}
+                          rel={item.link.rel || "noopener noreferrer"}
                           className="link-hover-anim"
                           data-link-animate="y"
                         >
-                          <>
-                            <span className="link-strong link-strong-unhovered">
-                              {item.link.text}{" "}
-                              <i
-                                className="mi-arrow-left size-18"
-                                aria-hidden="true"
-                              ></i>
-                            </span>
-                            <span
-                              className="link-strong link-strong-hovered"
+                          <span className="link-strong link-strong-unhovered">
+                            {item.link.text || "Link"}{" "}
+                            <i
+                              className="mi-arrow-left size-18"
                               aria-hidden="true"
-                            >
-                              {item.link.text}{" "}
-                              <i
-                                className="mi-arrow-right size-18"
-                                aria-hidden="true"
-                              ></i>
-                            </span>
-                          </>
+                            ></i>
+                          </span>
+                          <span
+                            className="link-strong link-strong-hovered"
+                            aria-hidden="true"
+                          >
+                            {item.link.text || "Link"}{" "}
+                            <i
+                              className="mi-arrow-right size-18"
+                              aria-hidden="true"
+                            ></i>
+                          </span>
                         </a>
-                      ) : null}{" "}
-                      {/* Render nothing if link is undefined */}
+                      ) : (
+                        <span>No link available</span> // Fallback if link or url is not provided
+                      )}
                     </div>
                   </div>
                 </React.Fragment>

@@ -1,3 +1,4 @@
+
 export const testimonials = [
   {
     quote: `This template is so beautiful and has such wonderful new options. It is updated often which gives me even more quality. The support is one of the absolute best I've ever had the pleasure of interacting with. Quick, courteous, and extremely helpful!`,
