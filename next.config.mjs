@@ -4,8 +4,12 @@
 const nextConfig = {
     eslint: {
         ignoreDuringBuilds: true
-    }
-    // Other configurations can go here if needed
+    },
+    output: 'export',  // Enable static export
+    images: {
+        unoptimized: true  // Disable Next.js image optimization for static hosting
+    },
+    basePath: '/your-repository-name',  // Replace with your GitHub repository name
 };
 
-export default nextConfig; // Use export default instead of module.exports
+export default nextConfig;
