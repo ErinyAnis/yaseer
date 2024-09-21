@@ -124,7 +124,9 @@ export default function Contact() {
                   <div
                     className={`contact-item col-6 col-lg-12 ${
                       index !== 3 ? "mb-3" : ""
-                    } ${isSecondToLast ? "order-2 order-lg-1" : ""} ${isLast ? "order-1 order-lg-2" : ""}`}
+                    } ${isSecondToLast ? "order-2 order-lg-1" : ""} ${
+                      isLast ? "order-1 order-lg-2" : ""
+                    }`}
                   >
                     <div className="ci-icon">
                       <div>{item.iconClass}</div>
@@ -135,26 +137,36 @@ export default function Contact() {
                     <h4 className="ci-title visually-hidden">{item.title}</h4>
                     <div className="ci-text">{item.text}</div>
                     <div>
-                      <a
-                        href={item.link?.url || "#"} // Fallback to prevent error
-                        target={item.link?.target}
-                        rel={item.link?.rel}
-                        className="link-hover-anim"
-                        data-link-animate="y"
-                      >
-                        {item.link && (
+                      {item.link ? ( // Check if link exists
+                        <a
+                          href={item.link.url || "#"} // Fallback if URL is undefined
+                          target={item.link.target}
+                          rel={item.link.rel}
+                          className="link-hover-anim"
+                          data-link-animate="y"
+                        >
                           <>
                             <span className="link-strong link-strong-unhovered">
                               {item.link.text}{" "}
-                              <i className="mi-arrow-left size-18" aria-hidden="true"></i>
+                              <i
+                                className="mi-arrow-left size-18"
+                                aria-hidden="true"
+                              ></i>
                             </span>
-                            <span className="link-strong link-strong-hovered" aria-hidden="true">
+                            <span
+                              className="link-strong link-strong-hovered"
+                              aria-hidden="true"
+                            >
                               {item.link.text}{" "}
-                              <i className="mi-arrow-right size-18" aria-hidden="true"></i>
+                              <i
+                                className="mi-arrow-right size-18"
+                                aria-hidden="true"
+                              ></i>
                             </span>
                           </>
-                        )}
-                      </a>
+                        </a>
+                      ) : null}{" "}
+                      {/* Render nothing if link is undefined */}
                     </div>
                   </div>
                 </React.Fragment>
@@ -197,13 +209,17 @@ export default function Contact() {
                         type="text"
                         name="user_name"
                         id="name"
-                        className={`input-lg round form-control ${errors.user_name ? "is-invalid" : ""}`}
+                        className={`input-lg round form-control ${
+                          errors.user_name ? "is-invalid" : ""
+                        }`}
                         placeholder="أدخل اسمك"
                         aria-required="true"
                         onChange={handleInputChange}
                       />
                       {errors.user_name && (
-                        <div className="invalid-feedback">{errors.user_name}</div>
+                        <div className="invalid-feedback">
+                          {errors.user_name}
+                        </div>
                       )}
                     </div>
                     {/* End Name */}
@@ -216,13 +232,17 @@ export default function Contact() {
                         type="email"
                         name="user_email"
                         id="email"
-                        className={`input-lg round form-control ${errors.user_email ? "is-invalid" : ""}`}
+                        className={`input-lg round form-control ${
+                          errors.user_email ? "is-invalid" : ""
+                        }`}
                         placeholder="أدخل بريدك الإلكتروني"
                         aria-required="true"
                         onChange={handleInputChange}
                       />
                       {errors.user_email && (
-                        <div className="invalid-feedback">{errors.user_email}</div>
+                        <div className="invalid-feedback">
+                          {errors.user_email}
+                        </div>
                       )}
                     </div>
                     {/* End Email */}
@@ -234,7 +254,9 @@ export default function Contact() {
                   <textarea
                     name="message"
                     id="message"
-                    className={`input-lg round form-control ${errors.message ? "is-invalid" : ""}`}
+                    className={`input-lg round form-control ${
+                      errors.message ? "is-invalid" : ""
+                    }`}
                     style={{ height: 130 }}
                     placeholder="أدخل رسالتك"
                     onChange={handleInputChange}
