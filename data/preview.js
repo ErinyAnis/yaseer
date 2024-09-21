@@ -884,7 +884,7 @@ export const homeOnepagesDark = [
   },
   {
     id: 21,
-    href: "/slick-one-page-split-dark",
+    // href: "/slick-one-page-split-dark",
     imgSrc: "/assets/images/intro/intro-sections/slick-split-dark.jpg",
     imgAlt: "Split Screen Intro Section. Slick Design Concept. Dark Version.",
     title: "Split Screen",
