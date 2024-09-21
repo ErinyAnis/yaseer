@@ -1260,14 +1260,7 @@ export const allHomes = [
           { href: "/slick-multi-page-dark", text: "Multi Page Dark" },
         ],
       },
-      {
-        title: "Split Screen",
-        links: [
-          { href: "/slick-one-page-split", text: "One Page" },
-          { href: "/slick-multi-page-split", text: "Multi Page" },
-          { href: "/slick-multi-page-split-dark", text: "Multi Page Dark" },
-        ],
-      },
+     
     ],
   },
   {
