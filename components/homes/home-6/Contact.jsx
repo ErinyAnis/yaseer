@@ -164,7 +164,7 @@ export default function Contact() {
                           </span>
                         </a>
                       ) : (
-                        <span>No link available</span> // Fallback if link or url is not provided
+                        <span></span> // Fallback if link or url is not provided
                       )}
                     </div>
                   </div>
