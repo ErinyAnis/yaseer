@@ -21,7 +21,7 @@ export const contactItems = [
     title: "Email",
     text: "info@yseer.sa",
     link: {
-      url: "mailto:info@yseer.sa@gmail.com",
+      url: "mailto:info@yseer.sa",
       text: "مرحبا",
     },
   },

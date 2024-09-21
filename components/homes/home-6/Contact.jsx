@@ -115,11 +115,10 @@ export default function Contact() {
           </h3>
           {/* Contact Information */}
           <div className="row">
-           
               {contactItems.map((item, index) => (
                 <React.Fragment key={index}>
                   <div
-                    className={`contact-item ${
+                    className={`contact-item col-6 ${
                       index !== 3 ? "mb-3" : ""
                     }`}
                   >
