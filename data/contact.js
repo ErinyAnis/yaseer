@@ -36,11 +36,8 @@ export const contactItems = [
   },
   {
     iconClass: <MdOutlineWorkOutline />,
-    title: "Phone",
-    text: "٠٥٣٧١٧٧٧٠٦",
-    link: {
-      url: "tel:+61383767284",
-      text: "اتصل الأن",
-    },
+    title: "work hours",
+    main_text: "ساعات العمل",
+    text: "  من الاحد للخميس من ٨،٠٠ ص وحتى ٦،٠٠ م",
   },
 ];

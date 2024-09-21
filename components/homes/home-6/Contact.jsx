@@ -106,22 +106,29 @@ export default function Contact() {
 
   return (
     <div className="container position-relative main-sec-padding contact-sec">
-      <div className="row">
+      <div className="row align-items-center">
         {/* Left Column */}
         <div className="col-lg-4 mb-md-50 mb-sm-30 position-relative z-index-1">
           <h2 className="section-caption-fancy mb-20 mb-xs-10">تواصل معنا</h2>
-          <h3 className="section-title mb-50 mb-sm-30">
+          <h3 className="section-title mb-50 mb-sm-40">
             دعنا نعرف كيف نساعدك.
           </h3>
           {/* Contact Information */}
+
           <div className="row">
-            <div className="col-md-11">
-              {contactItems.map((item, index) => (
+            {contactItems.map((item, index) => {
+              const isSecondToLast = index === contactItems.length - 2;
+              const isLast = index === contactItems.length - 1;
+
+              return (
                 <React.Fragment key={index}>
                   <div
-                    className={`contact-item ${
-                      index !== 3 ? "mb-3 mb-lg-5" : ""
-                    }`}
+                    className={`contact-item col-6 col-lg-12 ${
+                      index !== 3 ? "mb-3" : ""
+                    } ${
+                      // Reversing the last two columns only on mobile
+                      isSecondToLast ? "order-2 order-lg-1" : ""
+                    } ${isLast ? "order-1 order-lg-2" : ""}`}
                   >
                     <div className="ci-icon">
                       <div>{item.iconClass}</div>
@@ -133,41 +140,45 @@ export default function Contact() {
                     <div className="ci-text">{item.text}</div>
                     <div>
                       <a
-                        href={item.link.url}
-                        target={item.link.target}
-                        rel={item.link.rel}
+                        href={item.link?.url}
+                        target={item.link?.target}
+                        rel={item.link?.rel}
                         className="link-hover-anim"
                         data-link-animate="y"
                       >
-                        <span className="link-strong link-strong-unhovered">
-                          {item.link.text}{" "}
-                          <i
-                            className="mi-arrow-left size-18"
-                            aria-hidden="true"
-                          ></i>
-                        </span>
-                        <span
-                          className="link-strong link-strong-hovered"
-                          aria-hidden="true"
-                        >
-                          {item.link.text}{" "}
-                          <i
-                            className="mi-arrow-right size-18"
-                            aria-hidden="true"
-                          ></i>
-                        </span>
+                        {item.link && (
+                          <>
+                            <span className="link-strong link-strong-unhovered">
+                              {item.link?.text}{" "}
+                              <i
+                                className="mi-arrow-left size-18"
+                                aria-hidden="true"
+                              ></i>
+                            </span>
+                            <span
+                              className="link-strong link-strong-hovered"
+                              aria-hidden="true"
+                            >
+                              {item.link?.text}{" "}
+                              <i
+                                className="mi-arrow-right size-18"
+                                aria-hidden="true"
+                              ></i>
+                            </span>
+                          </>
+                        )}
                       </a>
                     </div>
                   </div>
                 </React.Fragment>
-              ))}
-            </div>
+              );
+            })}
           </div>
         </div>
         {/* End Left Column */}
 
         {/* Right Column */}
-        <div className="col-lg-8 col-xl-7 offset-xl-1">
+        <div className="col-lg-8">
           <div className="position-relative">
             {/* Decorative Image */}
             <div className="decoration-11 d-none d-xl-block">
