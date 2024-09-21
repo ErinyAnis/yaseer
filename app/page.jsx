@@ -1,4 +1,3 @@
-import Hero from "@/components/preview/Hero";
 import dynamic from "next/dynamic";
 
 const ParallaxContainer = dynamic(
