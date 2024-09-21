@@ -154,7 +154,7 @@ export const homeMultipages = [
   },
   {
     id: 20,
-    href: "/fancy-multi-page-bg-video",
+
     imgSrc: "/assets/images/intro/intro-sections/fancy-bg-video.jpg",
     imgAlt: "Background Video HTML5 Intro Section. Fancy Design Concept.",
     title: "BG Video HTML5",
@@ -634,7 +634,6 @@ export const homesMultipagesDark = [
   },
   {
     id: 20,
-    href: "/fancy-multi-page-bg-video-dark",
     imgSrc: "/assets/images/intro/intro-sections/fancy-bg-video.jpg",
     imgAlt:
       "Background Video HTML5 Intro Section. Fancy Design Concept. Dark Version.",

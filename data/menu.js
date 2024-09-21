@@ -1121,8 +1121,6 @@ export const allHomes = [
         links: [
           { href: "/fancy-one-page-bg-video", text: "One Page" },
           { href: "/fancy-one-page-bg-video-dark", text: "One Page Dark" },
-          { href: "/fancy-multi-page-bg-video", text: "Multi Page" },
-          { href: "/fancy-multi-page-bg-video-dark", text: "Multi Page Dark" },
         ],
       },
     ],
