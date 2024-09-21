@@ -593,7 +593,7 @@ export const menuItemsDark = [
           { href: "/main-pages-services-1-dark", text: "Services 1" },
           { href: "/main-pages-services-2-dark", text: "Services 2" },
           { href: "/main-pages-services-3-dark", text: "Services 3" },
-          { href: "/main-pages-clients-dark", text: "Clients" },
+          // { href: "/main-pages-clients-dark", text: "Clients" },
         ],
       },
       {
