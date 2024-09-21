@@ -2,9 +2,9 @@
 import { useEffect } from "react";
 import "swiper/css";
 import "../public/assets/css/styles.css";
-import "jarallax/dist/jarallax.min.css";
-import "swiper/css/effect-fade";
-import "react-modal-video/css/modal-video.css";
+// import "jarallax/dist/jarallax.min.css";
+// import "swiper/css/effect-fade";
+// import "react-modal-video/css/modal-video.css";
 import "photoswipe/dist/photoswipe.css";
 import { usePathname } from "next/navigation";
 import { parallaxMouseMovement, parallaxScroll } from "@/utlis/parallax";
