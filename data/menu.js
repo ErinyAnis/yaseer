@@ -295,7 +295,7 @@ export const menuItems = [
           { href: "/main-pages-services-1", text: "Services 1" },
           { href: "/main-pages-services-2", text: "Services 2" },
           { href: "/main-pages-services-3", text: "Services 3" },
-          // { href: "/main-pages-clients", text: "Clients" },
+          { href: "/main-pages-clients", text: "Clients" },
         ],
       },
       {
@@ -1121,6 +1121,8 @@ export const allHomes = [
         links: [
           { href: "/fancy-one-page-bg-video", text: "One Page" },
           { href: "/fancy-one-page-bg-video-dark", text: "One Page Dark" },
+          { href: "/fancy-multi-page-bg-video", text: "Multi Page" },
+          { href: "/fancy-multi-page-bg-video-dark", text: "Multi Page Dark" },
         ],
       },
     ],
@@ -1262,7 +1264,7 @@ export const allHomes = [
         title: "Split Screen",
         links: [
           { href: "/slick-one-page-split", text: "One Page" },
-          // { href: "/slick-one-page-split-dark", text: "One Page Dark" },
+          { href: "/slick-one-page-split-dark", text: "One Page Dark" },
           { href: "/slick-multi-page-split", text: "Multi Page" },
           { href: "/slick-multi-page-split-dark", text: "Multi Page Dark" },
         ],
