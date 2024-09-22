@@ -1,6 +1,7 @@
 export const footerLinks = [
   { name: "ترخيص رقم : ٩٦٩٥٧١", path: "#" },
   { name: "سجل تجاري : ١١٣١٣٣٧٤٨٣", path: "#" },
+  { name: " الرمز البريدي : ١٣٣١١", path: "#" },
 ];
 
 export const footerLinks2 = [

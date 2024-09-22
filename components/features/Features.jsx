@@ -40,7 +40,7 @@ const Features = () => {
                 className="section-descr mb-50 mb-sm-30 wow fadeInUp"
                 data-wow-delay="0.4s"
               >
-                نقدم خدمات متكاملة لضمان نجاح عملائنا. إليك أسباب اختيارنا:
+                إليك أسباب اختيارنا:
               </p>
             </div>
           </div>

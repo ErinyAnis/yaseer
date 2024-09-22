@@ -28,9 +28,6 @@ export default function FooterPreview() {
               <div>القصيم – بريدة <br />
                حي النهضة – طريق عثمان بن عفان</div>
             </div>
-            <div className="clearlinks">
-              <div>الرمز البريدي : ١٣٣١١</div>
-            </div>
           </div>
         </div>
         <div className="col-md-8">
