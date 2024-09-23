@@ -60,9 +60,9 @@ const Services = () => {
             {services6.map((elm, i) => (
               <div
                 key={i}
-                className="col-md-6 col-lg-4 d-flex align-items-stretch mb-30"
+                className="col-md-6 col-lg-3 d-flex align-items-stretch mb-30"
               >
-                <div className="services-3-item round text-center">
+                <div className="services-3-item round text-center w-100">
                   <div className="wow fadeInUpShort" data-wow-offset={50}>
                     <div className="services-3-icon">
                       <Image
@@ -73,7 +73,6 @@ const Services = () => {
                       />
                     </div>
                     <h3 className="services-3-title">{elm.title}</h3>
-                    <div className="services-3-text">{elm.text}</div>
                   </div>
                 </div>
               </div>

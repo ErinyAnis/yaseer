@@ -105,7 +105,7 @@ export default function Contact() {
   };
 
   return (
-    <div className="container position-relative main-sec-padding contact-sec">
+    <div className="container position-relative main-sec-padding contact-sec pt-0">
       <div className="row align-items-center">
         {/* Left Column */}
         <div className="col-lg-4 mb-md-50 mb-sm-30 position-relative z-index-1">

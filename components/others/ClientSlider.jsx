@@ -12,7 +12,7 @@ export default function ClientSlider() {
       slidesPerView={6}
       breakpoints={{
         1199: {
-          slidesPerView: 6,
+          slidesPerView: 5,
         },
         768: {
           slidesPerView: 4,
@@ -21,7 +21,7 @@ export default function ClientSlider() {
           slidesPerView: 2,
         },
       }}
-      loop={false} // Ensure loop is disabled to prevent duplication
+      loop={true} // Ensure loop is disabled to prevent duplication
       watchSlidesProgress
       modules={[Autoplay]}
       autoplay={{ delay: 3000, disableOnInteraction: false }} // Add autoplay delay

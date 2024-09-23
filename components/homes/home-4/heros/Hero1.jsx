@@ -3,7 +3,7 @@ import { features } from "@/data/features";
 import Image from "next/image";
 export default function Hero1() {
   return (
-    <div className="container position-relative d-flex align-items-center hero-sec">
+    <div className="container position-relative d-flex align-items-center hero-sec main-sec-padding pt-0">
       {/* Home Section Content */}
       <div className="home-content">
         <div className="row flex-row-reverse align-items-center">
@@ -17,9 +17,9 @@ export default function Hero1() {
                 className="hs-descr mb-50 mb-sm-40 wow fadeInUp ps-lg-5"
                 data-wow-delay="0.15s"
               >
-                كانت مهنة المحــاسبة ولا زالت عمــوداً فقـــرياً لنجاح نشاطـــك
-                التجاري، الخدمــي، الصــناعي، أو غير الربحي .. نحن في شركة
-                يســـير ، نسعد بتقديم خدماتنا لك.
+                شريكك لنجاح أعمالك كانت مهنة المحاسبة ولا زالت عموداً فقرياً
+                لنجاح نشاطك التجاري، الخدمي، الصناعي، أو غير الربحي .. نحن في
+                شركة يسير ، نسعد بتقديم خدماتنا لك
               </p>
               <div
                 className="wow fadeInUp wch-unset"
@@ -31,7 +31,7 @@ export default function Hero1() {
                     // href="#contact"
                     className="btn btn-mod btn-color btn-large btn-round btn-hover-anim"
                   >
-                    <span>اعرف اكثر عن الشركة</span>
+                    <span>اتصل بنا</span>
                   </a>
                 </div>
               </div>

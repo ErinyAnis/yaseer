@@ -7,8 +7,6 @@ const ParallaxContainer = dynamic(
   }
 );
 
-import HeaderPreview from "@/components/headers/HeaderPreview";
-import Hero1 from "@/components/homes/home-4/heros/Hero1";
 import Contact from "@/components/homes/home-6/Contact";
 import AboutUs from "../components/aboutUs/About";
 import MissionAndVision from "@/components/missionAndVision/MissionAndVision";
@@ -16,8 +14,9 @@ import Features from "@/components/features/Features";
 import Services from "@/components/services/Services";
 import OurPartners from "@/components/ourPartners/OurPartners";
 import Packages from "@/components/packages/Packages";
-import FooterPreview from "@/components/footers/FooterPreview";
 import DeviderSec from "@/components/deviderSec/DeviderSec";
+// import Hero1 from "@/components/homes/home-9/heros/Hero1";
+import Hero1 from "@/components/homes/home-5/heros/Hero1";
 
 export const metadata = {
   title: "الصفحة الرئيسية | يسير",
@@ -28,61 +27,45 @@ export const metadata = {
 export default function Home() {
   return (
     <>
-      <div className="theme-main">
-        <div className="page" id="top">
-          {/* Navigation Panel */}
-          <nav className="main-nav transparent stick-fixed wow-menubar">
-            <HeaderPreview />
-          </nav>
-          {/* End Navigation Panel */}
-          <main id="main">
-            {/* Home Section */}
-            {/* hero-sec */}
-            <Hero1 />
-            {/* end-hero-sec */}
+      {/* Home Section */}
+      {/* hero-sec */}
+      {/* <Hero1 /> */}
+      <Hero1 />
+      {/* end-hero-sec */}
 
-            {/* services-sec */}
-            <AboutUs />
-            {/* end-services-sec */}
+      {/* services-sec */}
+      {/* <AboutUs /> */}
+      {/* end-services-sec */}
 
-            {/* mission && vission */}
-            <MissionAndVision />
-            {/* end mission && vission */}
+      {/* mission && vission */}
+      {/* <MissionAndVision /> */}
+      {/* end mission && vission */}
 
-            {/* features */}
-            <Features />
-            {/* end-features */}
+      {/* Backages */}
+      <Packages />
+      {/* end-Backages */}
 
-            {/* services */}
-            <Services />
-            {/* end-services */}
+      {/* features */}
+      {/* <Features /> */}
+      {/* end-features */}
 
-            {/* our-partners */}
-            <OurPartners />
-            {/* end-our-partners */}
+      {/* services */}
+      <Services />
+      {/* end-services */}
 
-            {/* Backages */}
-            <Packages />
-            {/* end-Backages */}
+      {/* our-partners */}
+      <OurPartners />
+      {/* end-our-partners */}
 
-            {/* devider-sec */}
-            <DeviderSec />
-            {/* end-devider-sec */}
+      {/* devider-sec */}
+      {/* <DeviderSec /> */}
+      {/* end-devider-sec */}
 
-            {/* contact-sec */}
-            <Contact />
-            {/* end-contact-sec */}
+      {/* contact-sec */}
+      <Contact />
+      {/* end-contact-sec */}
 
-            {/* End Home Section */}
-          </main>
-          {/* Footer */}
-          <footer className="page-section footer">
-            <FooterPreview />
-          </footer>
-
-          {/* End Footer */}
-        </div>
-      </div>
+      {/* End Home Section */}
     </>
   );
 }

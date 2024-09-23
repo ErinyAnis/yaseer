@@ -8,6 +8,8 @@ import "swiper/css/effect-fade";
 import "photoswipe/dist/photoswipe.css";
 import { usePathname } from "next/navigation";
 import { parallaxMouseMovement, parallaxScroll } from "@/utlis/parallax";
+import HeaderPreview from "@/components/headers/HeaderPreview";
+import FooterPreview from "@/components/footers/FooterPreview";
 
 // import "tippy.js/dist/tippy.css";
 import { init_wow } from "@/utlis/initWowjs";
@@ -42,7 +44,7 @@ export default function RootLayout({ children }) {
   }, []);
 
   return (
-    <html lang="en" className="no-mobile no-touch ">
+    <html lang="en" className="no-mobile no-touch">
       <head>
         <link rel="icon" href="/favicon.png" />
 
@@ -75,7 +77,25 @@ export default function RootLayout({ children }) {
           href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700&display=swap"
         />
       </head>
-      <body className="appear-animate body">{children}</body>
+      <body className="appear-animate body">
+        <main id="main">
+          <div className="theme-main" id="top">
+            <div className="page">
+              {/* Navigation Panel */}
+              <nav className="main-nav transparent stick-fixed wow-menubar">
+                <HeaderPreview />
+              </nav>
+              {/* End Navigation Panel */}
+              {children}
+            </div>
+          </div>
+        </main>
+        {/* Footer */}
+        <footer className="page-section footer">
+          <FooterPreview />
+        </footer>
+        {/* End Footer */}
+      </body>
     </html>
   );
 }

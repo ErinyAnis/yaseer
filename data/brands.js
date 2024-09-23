@@ -132,7 +132,7 @@ export const clients = [
     name: "jada",
     delay: ".1s",
   },
- 
+
   {
     id: 6,
     imgSrc: "/assets/images/ourClients/robica.png",

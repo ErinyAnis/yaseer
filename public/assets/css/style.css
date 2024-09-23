@@ -204,6 +204,7 @@ Primary use: Multipurpose Template
   --color-secondary-1: #fbe3a1;
   --color-light-green: #08937A;
   --color-dark-green: #085B4B;
+  --color-white: #ffffff;
   --secondry-color: #1B2330;
   --gradient-primary-1: linear-gradient(90deg,
       var(--color-primary-4) 0%,
@@ -4961,7 +4962,7 @@ a.logo:hover {
  */
 
 .main-nav.transparent {
-  background: transparent !important;
+  /* background: transparent !important; */
   box-shadow: none;
 }
 
@@ -8118,7 +8119,7 @@ img.services-image {
 }
 
 .steps-2-title {
-  margin-bottom: 9px;
+  /* margin-bottom: 9px; */
   font-size: 21px;
   font-weight: 500;
 }
@@ -14515,8 +14516,8 @@ html:not(.mobile) .owl-animate-fadeInDown {
 /* added-styles */
 /* main */
 .main-sec-padding {
-  padding-top: 60px;
-  padding-bottom: 60px;
+  padding-top: 80px;
+  padding-bottom: 80px;
 }
 
 .cursor-default {
@@ -14537,8 +14538,39 @@ html:not(.mobile) .owl-animate-fadeInDown {
 }
 
 /* hero-sec */
+.hero-sec {
+  background-image: url('../images/landing-page/landing-page-bg.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.hero-sec::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(0 0 0 / 60%);
+  /* Adjust color and opacity as needed */
+  z-index: 1;
+  /* Makes sure the overlay stays behind the content */
+}
+
 .hero-sec .home-content {
-  margin-top: 120px;
+  color: var(--color-white);
+  z-index: 10;
+}
+
+.hero-sec .home-content h1 {
+  font-size: 60px !important;
+}
+
+.hero-sec .home-content p {
+  font-weight: 500 !important;
+  font-size: 22px !important;
+  padding-left: 40% !important;
 }
 
 .theme-main .btn-mod.btn-w {
@@ -14589,8 +14621,13 @@ footer {
 .contact-sec .main-text {
   font-size: 18px;
 }
+
 .contact-item:last-child a {
   display: none;
+}
+
+.text-black {
+  color: var(--color-dark-1);
 }
 
 @media (max-width: 992px) {
@@ -14599,15 +14636,20 @@ footer {
     padding-bottom: 55px;
   }
 
-  .home-content .composition-8-image img {
-    max-height: 450px;
-    object-fit: cover;
+  .hero-sec .home-content h1 {
+    font-size: 40px !important;
   }
+  
+  .hero-sec .home-content p {
+    font-size: 18px !important;
+    padding-left: 5% !important;
+  }
+  
 
 }
 
 @media only screen and (max-width: 480px) {
-.composition-8-image {
+  .composition-8-image {
     border-radius: 5px !important;
-} 
+  }
 }

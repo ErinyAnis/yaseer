@@ -5,9 +5,9 @@ import Image from "next/image";
 const OurPartners = () => {
   return (
     <>
-      <section className="page-section z-index-1">
-        <div className="container position-relative">
-          <div className="row justify-content-center mb-50 mb-sm-50">
+      {/* <section className="page-section z-index-1"> */}
+        {/* <div className="container position-relative"> */}
+          {/* <div className="row justify-content-center mb-50 mb-sm-50">
             <div className="col-md-10 col-lg-8  col-xl-6 text-center">
               <h2 className="section-title-small mb-20">شركائنا</h2>
               <p className="text-gray mb-0">
@@ -15,11 +15,11 @@ const OurPartners = () => {
                 مبتكرة تلبي احتياجات عملائنا في مختلف المجالات.
               </p>
             </div>
-          </div>
+          </div> */}
           {/* Features Grid */}
-          <div className="row mt-n30 wow fadeInUp">
+          {/* <div className="row mt-n30 wow fadeInUp"> */}
             {/* Feature Item */}
-            {features5.map((elm) => (
+            {/* {features5.map((elm) => (
               <div
                 key={elm.id}
                 className="col-sm-6 col-xl-3 d-flex align-items-stretch"
@@ -35,14 +35,14 @@ const OurPartners = () => {
                   </div>
                 </div>
               </div>
-            ))}
+            ))} */}
             {/* End Feature Item */}
 
             {/* End Feature Item */}
-          </div>
+          {/* </div> */}
           {/* End Features Grid */}
-        </div>
-      </section>
+        {/* </div>
+      </section> */}
 
       <section className="page-section pt-0">
         <div className="container relative">

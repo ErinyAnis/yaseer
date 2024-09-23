@@ -1,10 +1,8 @@
-import { TbSquareNumber1 } from "react-icons/tb";
-import { TbSquareNumber2 } from "react-icons/tb";
-import { TbSquareNumber3 } from "react-icons/tb";
-import { TbSquareNumber4 } from "react-icons/tb";
-import { TbSquareNumber5 } from "react-icons/tb";
-import { TbSquareNumber6 } from "react-icons/tb";
-import { TbSquareNumber7 } from "react-icons/tb";
+import { GoLaw } from "react-icons/go";
+import { GoShieldLock } from "react-icons/go";
+import { PiCoinsLight } from "react-icons/pi";
+import { PiConfettiLight } from "react-icons/pi";
+import { PiHandshakeLight } from "react-icons/pi";
 
 export const stepsData = [
   {
@@ -31,55 +29,41 @@ export const stepsData = [
 
 export const stepsItems = [
   {
-    title: "التأسيس",
-    sub_title: "المــــــــــــــالي",
+    title: "القـــانونية",
+    // sub_title: "القانونية",
     src: "/assets/images/packedges/1.svg",
-    icon: <TbSquareNumber1 />,
-    number: "1"
+    icon: <GoLaw />,
+    number: "1",
   },
   {
-    title: "المحاسب",
-    sub_title: "الشـــهري",
+    title: "الخصـــوصية",
+    // sub_title: "الخصوصية ",
     src: "/assets/images/packedges/2.svg",
-    icon: <TbSquareNumber2 />,
-    number: "2"
+    icon: <GoShieldLock />,
+    number: "2",
   },
+
   {
-    title: "مطابقة نقاط",
-    sub_title: "البيـــــــــــــــــــــــع",
-    src: "/assets/images/packedges/3.svg",
-    icon: <TbSquareNumber3 />,
-    number: "3"
-  },
-  {
-    title: "الإقرار",
-    sub_title: "الضريبي",
+    title: "الخبــــــرة",
+    // sub_title: "الخبرة",
     src: "/assets/images/packedges/4.svg",
-    icon: <TbSquareNumber4 />,
-    number: "4"
+    icon: <PiHandshakeLight />,
+    number: "4",
   },
   {
-    title: "المراجع",
-    sub_title: "الشـــــــهري",
+    title: "التكلــــفة",
+    // sub_title: "التكلفة",
     src: "/assets/images/packedges/5.svg",
-    icon: <TbSquareNumber5 />,
-    number: "5"
+    icon: <PiCoinsLight />,
+    number: "5",
   },
   {
-    title: "إعداد دراسات الجدوى",
-    sub_title: "الســــــــــــابقة",
-    src: "/assets/images/packedges/6.svg",
-    icon: <TbSquareNumber6 />,
-    number: "6"
+    title: "النتــــائج",
+    // sub_title: "النتائج",
+    src: "/assets/images/packedges/3.svg",
+    icon: <PiConfettiLight />,
+    number: "3",
   },
-  {
-    title: "المراجعة للفترات",
-    sub_title: "الســــــــــــابقة",
-    src: "/assets/images/packedges/7.svg",
-    icon: <TbSquareNumber7 />,
-    number: "7"
-  },
-  
 ];
 
 export const stepsItems2 = [

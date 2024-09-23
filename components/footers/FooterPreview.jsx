@@ -3,6 +3,7 @@ import Image from "next/image";
 import FooterSocials from "./FooterSocials";
 import Link from "next/link";
 import { footerLinks, navigationLinks } from "@/data/footer";
+import { MdOutlineWorkOutline } from "react-icons/md";
 
 export default function FooterPreview() {
   return (
@@ -25,8 +26,14 @@ export default function FooterPreview() {
               <a href="tel:+0537177706">٠٥٣٧١٧٧٧٠٦</a>
             </div>
             <div className="clearlinks">
-              <div>القصيم – بريدة <br />
-               حي النهضة – طريق عثمان بن عفان</div>
+              <div>
+                القصيم – بريدة <br />
+                حي النهضة – طريق عثمان بن عفان
+              </div>
+              <a href="#" className="d-flex align-items-center gap-1 mt-4">
+                <MdOutlineWorkOutline />
+                <div>الوظــــائــف</div>
+              </a>
             </div>
           </div>
         </div>
@@ -61,6 +68,15 @@ export default function FooterPreview() {
                     <a href={elm.path}>{elm.name}</a>
                   </li>
                 ))}
+                <li>
+                  <Image
+                    src="/assets/images/barcode.jpg"
+                    className="rounded mt-3"
+                    alt="barcode"
+                    width={70}
+                    height={70}
+                  />
+                </li>
               </ul>
             </div>
             {/* End Footer Widget */}
@@ -68,21 +84,23 @@ export default function FooterPreview() {
         </div>
       </div>
       {/* Footer Text */}
-      <div className="row">
-        <div className="">
-          <b> شركة يسير لخدمات الضريبة والمحاسبة – جميع الحقوق محفوظة {new Date().getFullYear()}م.</b>
-        </div>
-        
-          {/* Back to Top Link */}
-          <div className="local-scroll float-end mt-n20 mt-sm-10">
-            <a href="#top" className="link-to-top">
-              <i className="mi-arrow-up size-24" />
-              <span className="visually-hidden">Scroll to top</span>
-            </a>
-          </div>
-          {/* End Back to Top Link */}
-     
+
+      <div>
+        <b>
+          {" "}
+          شركة يسير لخدمات الضريبة والمحاسبة – جميع الحقوق محفوظة{" "}
+          {new Date().getFullYear()}م.
+        </b>
       </div>
+      {/* Back to Top Link */}
+      <div className="local-scroll float-end mt-n20 mt-sm-10">
+        <a href="#top" className="link-to-top">
+          <i className="mi-arrow-up size-24" />
+          <span className="visually-hidden">Scroll to top</span>
+        </a>
+      </div>
+      {/* End Back to Top Link */}
+
       {/* End Footer Text */}
     </div>
   );
