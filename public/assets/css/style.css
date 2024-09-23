@@ -2024,6 +2024,7 @@ a.btn-mod:focus {
   overflow: hidden;
   isolation: isolate;
   transform: translateZ(0);
+  text-wrap: nowrap;
 }
 
 .btn-mod.btn-hover-anim>span {
@@ -14600,6 +14601,25 @@ html:not(.mobile) .owl-animate-fadeInDown {
   background: var(--secondry-color);
 }
 
+.home-contact-sec {
+  background-color: var(--color-dark-green);
+  color: var(--color-white);
+  border-radius: 10px;
+  padding: 50px 80px;
+}
+
+.home-contact-sec h2 {
+  font-size: 24px !important;
+}
+
+.home-contact-sec h2 span {
+  font-size: 16px;
+}
+
+.home-contact-sec a {
+  color: var(--color-white) !important;
+}
+
 /* footer */
 footer .local-scroll {
   position: absolute;
@@ -14630,12 +14650,15 @@ footer {
   color: var(--color-dark-1);
 }
 
+
+
 @media (max-width: 992px) {
   .main-sec-padding {
     padding-top: 55px;
     padding-bottom: 55px;
   }
 
+  /* hero-sec  */
   .hero-sec .home-content h1 {
     font-size: 40px !important;
   }
@@ -14644,7 +14667,19 @@ footer {
     font-size: 18px !important;
     padding-left: 5% !important;
   }
-  
+
+  /* contact */
+  .home-contact-sec h2 {
+    font-size: 20px;
+  }
+
+  .home-contact-sec h2 span {
+    font-size: 14px;
+  }
+
+  .home-contact-sec {
+    padding: 50px 60px;
+  }
 
 }
 

@@ -44,7 +44,7 @@ const OurPartners = () => {
         {/* </div>
       </section> */}
 
-      <section className="page-section pt-0">
+      <section className="main-sec-padding pt-0">
         <div className="container relative">
           <div className="row wow fadeInUpShort justify-content-center">
             <div className="col-md-10 col-lg-8 col-xl-6 text-center mb-4">

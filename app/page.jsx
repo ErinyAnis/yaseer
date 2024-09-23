@@ -17,6 +17,7 @@ import Packages from "@/components/packages/Packages";
 import DeviderSec from "@/components/deviderSec/DeviderSec";
 // import Hero1 from "@/components/homes/home-9/heros/Hero1";
 import Hero1 from "@/components/homes/home-5/heros/Hero1";
+import NewsLetter from "@/components/homes/home-4/NewsLetter";
 
 export const metadata = {
   title: "الصفحة الرئيسية | يسير",
@@ -62,8 +63,14 @@ export default function Home() {
       {/* end-devider-sec */}
 
       {/* contact-sec */}
-      <Contact />
+      {/* <Contact /> */}
       {/* end-contact-sec */}
+
+
+      {/* new contact sec*/}
+        <NewsLetter />
+      {/* {end contact sec} */}
+      
 
       {/* End Home Section */}
     </>
