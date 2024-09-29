@@ -2,7 +2,6 @@ import React from "react";
 import Image from "next/image";
 import FooterSocials from "./FooterSocials";
 import Link from "next/link";
-import { footerLinks, navigationLinks } from "@/data/footer";
 
 export default function Footer1({ dark = false }) {
   return (

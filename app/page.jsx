@@ -11,13 +11,13 @@ import Contact from "@/components/homes/home-6/Contact";
 import AboutUs from "../components/aboutUs/About";
 import MissionAndVision from "@/components/missionAndVision/MissionAndVision";
 import Features from "@/components/features/Features";
-import Services from "@/components/services/Services";
 import OurPartners from "@/components/ourPartners/OurPartners";
 import Packages from "@/components/packages/Packages";
 import DeviderSec from "@/components/deviderSec/DeviderSec";
 // import Hero1 from "@/components/homes/home-9/heros/Hero1";
 import Hero1 from "@/components/homes/home-5/heros/Hero1";
 import NewsLetter from "@/components/homes/home-4/NewsLetter";
+import Services from "../components/services/Services"
 
 export const metadata = {
   title: "الصفحة الرئيسية | يسير",

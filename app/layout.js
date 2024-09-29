@@ -88,7 +88,7 @@ export default function RootLayout({ children }) {
               {/* End Navigation Panel */}
 
               {/* Render children here */}
-              {children} {/* This is where the About page content will appear */}
+              {children}
 
             </div>
           </div>
