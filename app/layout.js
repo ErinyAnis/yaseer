@@ -34,11 +34,12 @@ export default function RootLayout({ children }) {
       window.removeEventListener("scroll", headerChangeOnScroll);
     };
   }, [path]);
+
   useEffect(() => {
     if (typeof window !== "undefined") {
       // Import the script only on the client side
       import("bootstrap/dist/js/bootstrap.esm").then(() => {
-        // Module is imported, you can access any exported functionality if
+        // Module is imported, you can access any exported functionality if needed
       });
     }
   }, []);
@@ -47,7 +48,6 @@ export default function RootLayout({ children }) {
     <html lang="en" className="no-mobile no-touch">
       <head>
         <link rel="icon" href="/favicon.png" />
-
         <link
           href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap"
           rel="stylesheet"
@@ -86,12 +86,15 @@ export default function RootLayout({ children }) {
                 <HeaderPreview />
               </nav>
               {/* End Navigation Panel */}
-              {children}
+
+              {/* Render children here */}
+              {children} {/* This is where the About page content will appear */}
+
             </div>
           </div>
         </main>
         {/* Footer */}
-        <footer className="page-section footer">
+        <footer className="pt-5 pb-5 footer">
           <FooterPreview />
         </footer>
         {/* End Footer */}

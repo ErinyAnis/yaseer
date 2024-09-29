@@ -17,7 +17,7 @@ const Services = () => {
         className="page-section bg-dark-1 bg-dark-alpha-60 light-content parallax-5"
         style={{
           backgroundImage:
-            "url(/assets/images/services/ourServices-bg.png)",
+            "url(/assets/images/services/our-services-bg.png)",
         }}
       >
         <div className="container position-relative pt-50 pb-100 pb-sm-20">

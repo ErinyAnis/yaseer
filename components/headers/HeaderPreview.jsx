@@ -81,44 +81,45 @@ export default function HeaderPreview() {
       {/* Main Menu */}
       {/* old */}
       <div className="inner-nav desktop-nav">
-          <ul className="clearlist local-scroll">
-            {/* Item  */}
-            <li>
-              <Link href="/">
-                <span className="mn-has-sub active">الصفحة الرئيسية</span>
-              </Link>
-            </li>
-            {/* End Item */}
+        <ul className="clearlist local-scroll">
+          {/* Item  */}
+          <li>
+            <Link href="/">
+              <span className="mn-has-sub active">الصفحة الرئيسية</span>
+            </Link>
+          </li>
+          {/* End Item */}
 
-            {/* Item */}
-            <li>
-              <a className="mn-has-sub">المنتجات</a>
-            </li>
-            {/* End Item */}
+          {/* Item */}
+          <li>
+            <a className="mn-has-sub">المنتجات</a>
+          </li>
+          {/* End Item */}
 
-            {/* Item */}
-            <li>
-              <a className="mn-has-sub">الأسعار</a>
-            </li>
-            {/* End Item */}
-            {/* Item */}
-            <li>
-              <a className="mn-has-sub">عن الشركة</a>
-            </li>
-            {/* End Item */}
-            {/* Item */}
-            <li>
-              <a className="mn-has-sub">اتصل بنا</a>
-            </li>
-            {/* End Item */}
-
-          </ul>
-          <ul className="items-end clearlist">
-            {/* Languages */}
-            <LanguageSelect />
-            {/* End Languages */}
-          </ul>
-        </div>
+          {/* Item */}
+          <li>
+            <a className="mn-has-sub">الأسعار</a>
+          </li>
+          {/* End Item */}
+          {/* Item */}
+          <li>
+            <Link href="/about">
+              <span className="mn-has-sub">عن الشركة</span>
+            </Link>
+          </li>
+          {/* End Item */}
+          {/* Item */}
+          <li>
+            <a className="mn-has-sub">اتصل بنا</a>
+          </li>
+          {/* End Item */}
+        </ul>
+        <ul className="items-end clearlist">
+          {/* Languages */}
+          <LanguageSelect />
+          {/* End Languages */}
+        </ul>
+      </div>
       {/* End Main Menu */}
     </div>
   );

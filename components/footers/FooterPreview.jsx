@@ -8,13 +8,13 @@ import { MdOutlineWorkOutline } from "react-icons/md";
 export default function FooterPreview() {
   return (
     <div className="container">
-      <div className="row pb-120 pb-sm-80 pb-xs-50">
+      <div className="row pb-60 pb-sm-80 pb-xs-50">
         <div className="col-md-4 mb-sm-50">
           <Link href={"/"} className="mb-30">
             <Image
               src="/assets/images/logo/logo.png"
-              width={105}
-              height={34}
+              width={190}
+              height={190}
               alt="Your Company Logo"
             />
           </Link>
@@ -23,7 +23,7 @@ export default function FooterPreview() {
               <a href="mailto:ibthemes21@gmail.com">info@yseer.sa</a>
             </div>
             <div className="clearlinks">
-              <a href="tel:+0537177706">٠٥٣٧١٧٧٧٠٦</a>
+              <a href="tel:+0537177706">0537177706</a>
             </div>
             <div className="clearlinks">
               <div>
@@ -73,8 +73,8 @@ export default function FooterPreview() {
                     src="/assets/images/barcode.jpg"
                     className="rounded mt-3"
                     alt="barcode"
-                    width={70}
-                    height={70}
+                    width={150}
+                    height={150}
                   />
                 </li>
               </ul>
@@ -85,6 +85,9 @@ export default function FooterPreview() {
       </div>
       {/* Footer Text */}
 
+      <div className="hr-footer">
+        <hr />
+      </div>
       <div>
         <b>
           {" "}

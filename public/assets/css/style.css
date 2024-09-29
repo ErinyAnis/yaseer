@@ -5378,7 +5378,7 @@ a.logo:hover {
 
 .bg-dark-alpha:before,
 .bg-dark-alpha .YTPOverlay:before {
-  background: #111;
+  background: #111111d5;
   opacity: 0.97;
 }
 
@@ -5396,7 +5396,7 @@ a.logo:hover {
 
 .bg-dark-alpha-60:before,
 .bg-dark-alpha-60 .YTPOverlay:before {
-  background: #111;
+  background: #111111c2;
   opacity: 0.6;
 }
 
@@ -5968,7 +5968,7 @@ a.logo:hover {
   width: 70px;
   height: 1px;
   margin: 0 auto 0 0;
-  background: var(--gradient-primary-1);
+  background: var(--color-dark-1);
 }
 
 .text-gray {
@@ -11396,8 +11396,9 @@ footer:not(.light-content) .text-gray a:hover {
 
 .fw-title {
   margin-bottom: 16px;
-  font-size: 18px;
+  font-size: 20px;
   letter-spacing: -0.02em;
+  font-weight: bold;
 }
 
 .fw-menu li:not(:last-child) {
@@ -14540,7 +14541,7 @@ html:not(.mobile) .owl-animate-fadeInDown {
 
 /* hero-sec */
 .hero-sec {
-  background-image: url('../images/landing-page/landing-page-bg.png');
+  background-image: url('../images/hero-sec/hero-sec.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -14553,7 +14554,7 @@ html:not(.mobile) .owl-animate-fadeInDown {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgb(0 0 0 / 60%);
+  background-color: rgb(0 0 0 / 30%);
   /* Adjust color and opacity as needed */
   z-index: 1;
   /* Makes sure the overlay stays behind the content */
@@ -14650,7 +14651,16 @@ footer {
   color: var(--color-dark-1);
 }
 
+.hr-footer hr {
+  background: var(--color-white);
+  opacity: 1;
+}
 
+/* ----------------------------- */
+/* about-page */
+.about-page h1 {
+  font-size: 32px;
+}
 
 @media (max-width: 992px) {
   .main-sec-padding {
@@ -14662,7 +14672,7 @@ footer {
   .hero-sec .home-content h1 {
     font-size: 40px !important;
   }
-  
+
   .hero-sec .home-content p {
     font-size: 18px !important;
     padding-left: 5% !important;
@@ -14679,6 +14689,12 @@ footer {
 
   .home-contact-sec {
     padding: 50px 60px;
+  }
+
+  /* -------------------- */
+  /* about-page */
+  .about-page h1 {
+    font-size: 24px;
   }
 
 }
