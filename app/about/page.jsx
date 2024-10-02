@@ -34,13 +34,13 @@ const About = () => {
           />
         </div>
         {/* End Decorative Line */}
-        <div className="container position-relative mt-4">
+        <div className="container position-relative mt-4 wow fadeInUp">
           <div className="text-center">
             <Image
-              src="/assets/images/aboutUs/about-4.png"
+              src="/assets/images/aboutUs/about-1.png"
               alt="yaseer"
               width={100}
-              height={100} className="about-img w-100"
+              height={100} className="about-img"
             />
           </div>
           {/* content */}

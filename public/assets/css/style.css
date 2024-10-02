@@ -14626,7 +14626,6 @@ html:not(.mobile) .owl-animate-fadeInDown {
 .about-page .about-content ul li {
   list-style: none;
 }
-
 .about-page .about-content ul li {
   margin-bottom: 60px;
 }
@@ -14634,6 +14633,10 @@ html:not(.mobile) .owl-animate-fadeInDown {
 .about-page .about-content ul li h3 {
   font-weight: 600;
   font-size: 24px;
+}
+
+.about-page .about-img {
+  width: 55%;
 }
 
 /* footer */
@@ -14704,6 +14707,10 @@ footer {
 
   .home-contact-sec {
     padding: 50px 60px;
+  }
+
+  .about-page .about-img {
+    width: 100%;
   }
 
   /* -------------------- */
