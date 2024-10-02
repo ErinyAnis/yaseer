@@ -1,4 +1,4 @@
-import Footer1 from "@/components/footers/Footer1";
+
 import Link from "next/link";
 import React from "react";
 import Image from "next/image";
@@ -111,8 +111,6 @@ export default function MainAboutPage1() {
               {/* End Home Section */}
             </main>
           </>
-
-          <Footer1 />
         </div>{" "}
       </div>
     </>
