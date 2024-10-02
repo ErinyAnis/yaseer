@@ -9,7 +9,7 @@ import "photoswipe/dist/photoswipe.css";
 import { usePathname } from "next/navigation";
 import { parallaxMouseMovement, parallaxScroll } from "@/utlis/parallax";
 import HeaderPreview from "@/components/headers/HeaderPreview";
-import FooterPreview from "@/components/footers/FooterPreview";
+import FooterPreview from "../components/footers/FooterPreview";
 
 // import "tippy.js/dist/tippy.css";
 import { init_wow } from "@/utlis/initWowjs";
