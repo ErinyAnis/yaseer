@@ -37,10 +37,10 @@ const About = () => {
         <div className="container position-relative mt-4">
           <div className="text-center">
             <Image
-              src="/assets/images/aboutUs/about-1.png"
+              src="/assets/images/aboutUs/about-4.png"
               alt="yaseer"
               width={100}
-              height={100} className="about-img w-90"
+              height={100} className="about-img w-100"
             />
           </div>
           {/* content */}

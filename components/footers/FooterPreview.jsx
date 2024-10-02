@@ -8,7 +8,7 @@ import { MdOutlineWorkOutline } from "react-icons/md";
 export default function FooterPreview() {
   return (
     <div className="container">
-      <div className="row pb-60 pb-sm-80 pb-xs-50">
+      <div className="row pb-50 pb-sm-40">
         <div className="col-md-4 mb-sm-50">
           <Link href={"/"} className="mb-30">
             <Image
