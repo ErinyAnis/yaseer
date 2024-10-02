@@ -7,9 +7,7 @@ export default function AboutPage() {
         <div className="row">
           <div className="text-center">
             <div className="wow fadeInUp">
-              <h1 className="mb-20 mb-xs-10">
-                عن الشركة
-              </h1>
+              <h1 className="mb-20 mb-xs-10">عن الشركة</h1>
               <div className="section-line-gradient mx-auto mb-20" />
               <h3 className="section-title mb-40 mb-sm-30">
                 The best way to create stanning layouts for your website.

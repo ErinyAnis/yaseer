@@ -7,7 +7,6 @@ const ParallaxContainer = dynamic(
   }
 );
 
-import Contact from "@/components/homes/home-6/Contact";
 import AboutUs from "../components/aboutUs/About";
 import MissionAndVision from "@/components/missionAndVision/MissionAndVision";
 import Features from "@/components/features/Features";
@@ -61,11 +60,6 @@ export default function Home() {
       {/* devider-sec */}
       {/* <DeviderSec /> */}
       {/* end-devider-sec */}
-
-      {/* contact-sec */}
-      {/* <Contact /> */}
-      {/* end-contact-sec */}
-
 
       {/* new contact sec*/}
         <NewsLetter />

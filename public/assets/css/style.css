@@ -14515,6 +14515,7 @@ html:not(.mobile) .owl-animate-fadeInDown {
   font-size: 16px;
 }
 
+/* --------------------------------------------- */
 /* added-styles */
 /* main */
 .main-sec-padding {
@@ -14621,6 +14622,23 @@ html:not(.mobile) .owl-animate-fadeInDown {
   color: var(--color-white) !important;
 }
 
+/* about-page */
+.about-page .about-content ul li {
+  list-style: none;
+}
+.about-page .about-content ul li {
+  margin-bottom: 60px;
+}
+
+.about-page .about-content ul li h3 {
+  font-weight: 600;
+  font-size: 24px;
+}
+
+.about-page .about-img {
+  width: 60%;
+}
+
 /* footer */
 footer .local-scroll {
   position: absolute;
@@ -14689,6 +14707,10 @@ footer {
 
   .home-contact-sec {
     padding: 50px 60px;
+  }
+
+  .about-page .about-img {
+    width: 100%;
   }
 
   /* -------------------- */

@@ -1,4 +1,5 @@
 "use client";
+import { usePathname } from "next/navigation";
 import { allHomes, menuItems } from "@/data/menu";
 import { toggleMobileMenu } from "@/utlis/toggleMobileMenu";
 import Image from "next/image";
@@ -7,7 +8,9 @@ import { useEffect, useState } from "react";
 import LanguageSelect from "./components/LanguageSelect";
 import { init_classic_menu_resize } from "@/utlis/menuToggle";
 import { scrollToElement } from "@/utlis/scrollToElement";
+
 export default function HeaderPreview() {
+  const pathname = usePathname(); // Get current route
   const [menuOpen, setMenuOpen] = useState([-1, -1]);
 
   const toggleParent1 = (i) => {
@@ -85,7 +88,11 @@ export default function HeaderPreview() {
           {/* Item  */}
           <li>
             <Link href="/">
-              <span className="mn-has-sub active">الصفحة الرئيسية</span>
+              <span
+                className={`mn-has-sub ${pathname === "/" ? "active" : ""}`}
+              >
+                الصفحة الرئيسية
+              </span>
             </Link>
           </li>
           {/* End Item */}
@@ -104,13 +111,27 @@ export default function HeaderPreview() {
           {/* Item */}
           <li>
             <Link href="/about">
-              <span className="mn-has-sub">عن الشركة</span>
+              <span
+                className={`mn-has-sub ${
+                  pathname === "/about" ? "active" : ""
+                }`}
+              >
+                عن الشركة
+              </span>
             </Link>
           </li>
           {/* End Item */}
           {/* Item */}
           <li>
-            <a className="mn-has-sub">اتصل بنا</a>
+            <Link href="/contactUs">
+              <span
+                className={`mn-has-sub ${
+                  pathname === "/contactUs" ? "active" : ""
+                }`}
+              >
+                اتصل بنا
+              </span>
+            </Link>
           </li>
           {/* End Item */}
         </ul>
