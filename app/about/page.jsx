@@ -39,8 +39,8 @@ const About = () => {
             <Image
               src="/assets/images/aboutUs/about-1.png"
               alt="yaseer"
-              width={100}
-              height={100} className="about-img"
+              width={600}
+              height={600} className="about-img"
             />
           </div>
           {/* content */}
