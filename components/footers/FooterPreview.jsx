@@ -30,10 +30,10 @@ export default function FooterPreview() {
                 القصيم – بريدة <br />
                 حي النهضة – طريق عثمان بن عفان
               </div>
-              <a href="#" className="d-flex align-items-center gap-1 mt-4">
+              <Link href="/jobs" className="d-flex align-items-center gap-1 mt-4">
                 <MdOutlineWorkOutline />
                 <div>الوظــــائــف</div>
-              </a>
+              </Link>
             </div>
           </div>
         </div>
