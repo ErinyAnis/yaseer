@@ -1,5 +1,9 @@
 import JobsForm from "@/components/jobsForm/JobsForm";
 
+export const metadata = {
+  title: " التوظيف | يسير",
+  description: "قدم علي وظيفة في يسير"
+};
 
 const page = () => {
   return (

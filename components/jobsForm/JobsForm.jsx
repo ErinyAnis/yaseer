@@ -27,6 +27,7 @@ export default function JobsForm() {
   const {
     control,
     handleSubmit,
+    reset, 
     formState: { errors },
   } = useForm({
     resolver: yupResolver(schema),
@@ -59,8 +60,7 @@ export default function JobsForm() {
 
       if (response.ok) {
         toast.success(`Email was successfully sent!`);
-        // Reset the form fields
-        reset();
+        reset(); // Reset the form inputs after successful submission
       } else {
         toast.error(`Error: ${responseData.message || "Something went wrong"}`);
       }
