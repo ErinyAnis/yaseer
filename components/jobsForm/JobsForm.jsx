@@ -59,6 +59,8 @@ export default function JobsForm() {
 
       if (response.ok) {
         toast.success(`Email was successfully sent!`);
+        // Reset the form fields
+        reset();
       } else {
         toast.error(`Error: ${responseData.message || "Something went wrong"}`);
       }
