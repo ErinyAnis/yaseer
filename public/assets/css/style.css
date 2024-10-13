@@ -14680,6 +14680,15 @@ footer {
   font-size: 32px;
 }
 
+/* ----------------------------- */
+  /* job application form  */
+.jobs-form form label h4 {
+  font-size: 24px;
+}
+
+/* ---------------------------------- */
+/* media queries */
+
 @media (max-width: 992px) {
   .main-sec-padding {
     padding-top: 55px;
@@ -14711,6 +14720,15 @@ footer {
 
   .about-page .about-img {
     width: 100%;
+  }
+
+  /* ------------------------------ */
+  /* job application form  */
+  .jobs-form form label h4 {
+    font-size: 20px;
+  }
+  .jobs-form form label p {
+    font-size: 16px;
   }
 
   /* -------------------- */
