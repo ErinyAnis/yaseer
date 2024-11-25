@@ -12,12 +12,12 @@ export default function FooterSocials() {
       </li>
       <li>
         <a href="#" rel="noopener nofollow" target="_blank">
-        <FaXTwitter className="ms-1" /> تويتر
+          <FaXTwitter className="ms-1" /> تويتر
         </a>
       </li>
       <li>
         <a href="#" rel="noopener nofollow" target="_blank">
-        <RiWhatsappLine className="ms-1" /> واتس اب
+          <RiWhatsappLine className="ms-1" /> واتس اب
         </a>
       </li>
     </>

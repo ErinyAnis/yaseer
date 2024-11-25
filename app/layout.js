@@ -82,14 +82,15 @@ export default function RootLayout({ children }) {
           <div className="theme-main" id="top">
             <div className="page">
               {/* Navigation Panel */}
-              <nav className="main-nav transparent stick-fixed wow-menubar">
-                <HeaderPreview />
-              </nav>
+              <header>
+                <nav className="main-nav transparent stick-fixed wow-menubar">
+                  <HeaderPreview />
+                </nav>
+              </header>
               {/* End Navigation Panel */}
 
               {/* Render children here */}
               {children}
-
             </div>
           </div>
         </main>

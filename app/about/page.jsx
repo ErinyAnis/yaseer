@@ -30,7 +30,7 @@ const About = () => {
             src="/assets/images/demo-gradient/decoration-2.png"
             width={1920}
             height={616}
-            alt=""
+            alt="about-us"
           />
         </div>
         {/* End Decorative Line */}
@@ -41,6 +41,7 @@ const About = () => {
               alt="yaseer"
               width={600}
               height={600} className="about-img"
+              priority
             />
           </div>
           {/* content */}

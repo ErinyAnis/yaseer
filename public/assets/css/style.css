@@ -174,7 +174,7 @@ Primary use: Multipurpose Template
   --container-width: 1350px;
   --section-padding-y: 120px;
   --menu-bar-height: 85px;
-  --menu-bar-height-scrolled: 65px;
+  --menu-bar-height-scrolled: 70px;
   --color-dark-1: #010101;
   --color-dark-2: #171717;
   --color-dark-3: #272727;
@@ -316,6 +316,10 @@ div:focus.focus-visible {
   -moz-outline: 3px dotted #36a367 !important;
   outline: 3px dotted #36a367 !important;
   outline-offset: 0 !important;
+}
+
+a {
+  text-decoration: none;
 }
 
 img:not([draggable]),
@@ -4392,12 +4396,26 @@ a.logo:hover {
   height: var(--menu-bar-height-scrolled) !important;
 }
 
+.main-nav:not(.mobile-on).small-height .inner-nav>ul>li.jobs>a {
+  height: auto !important;
+}
+
 .inner-nav ul li a:hover,
 .inner-nav ul li a span.active {
   /* color: var(--color-dark-1); */
   color: var(--color-dark-green);
   opacity: 1 !important;
   text-decoration: none;
+}
+
+.inner-nav ul li.jobs a:has(span.active) {
+  border-color: var(--color-dark-green) !important;
+  background-color: var(--color-dark-green);
+  color: var(--color-white) !important;
+}
+
+.inner-nav ul li.jobs a:has(span.active) span {
+  color: var(--color-white);
 }
 
 .body-scrolled .scrolled-hidden {
@@ -14540,6 +14558,17 @@ html:not(.mobile) .owl-animate-fadeInDown {
   background-image: none;
 }
 
+/* navbar */
+header nav ul li.jobs a {
+  border-color: var(--color-dark-2);
+  color: var(--color-dark-2);
+  background-color: transparent;
+}
+
+header nav ul li.jobs a:hover {
+  color: var(--color-white) !important;
+}
+
 /* hero-sec */
 .hero-sec {
   background-image: url('../images/hero-sec/hero-sec.png');
@@ -14626,6 +14655,7 @@ html:not(.mobile) .owl-animate-fadeInDown {
 .about-page .about-content ul li {
   list-style: none;
 }
+
 .about-page .about-content ul li {
   margin-bottom: 60px;
 }
@@ -14640,6 +14670,10 @@ html:not(.mobile) .owl-animate-fadeInDown {
 }
 
 /* footer */
+footer .container {
+  padding: 0 40px;
+}
+
 footer .local-scroll {
   position: absolute;
   right: 10px;
@@ -14674,6 +14708,23 @@ footer {
   opacity: 1;
 }
 
+footer .jobs a {
+  border-color: var(--color-white);
+  background-color: transparent;
+}
+
+footer .jobs a::before {
+  display: none !important;
+}
+
+footer .jobs a:hover div {
+  color: var(--color-light-green) !important;
+}
+
+footer .jobs a:hover {
+  border-color: var(--color-light-green) !important;
+}
+
 /* ----------------------------- */
 /* about-page */
 .about-page h1 {
@@ -14681,7 +14732,7 @@ footer {
 }
 
 /* ----------------------------- */
-  /* job application form  */
+/* job application form  */
 .jobs-form form label h4 {
   font-size: 24px;
 }
@@ -14727,6 +14778,7 @@ footer {
   .jobs-form form label h4 {
     font-size: 20px;
   }
+
   .jobs-form form label p {
     font-size: 16px;
   }
@@ -14735,6 +14787,15 @@ footer {
   /* about-page */
   .about-page h1 {
     font-size: 24px;
+  }
+
+  /* footer */
+  footer .logo img {
+    max-width: 150px;
+  }
+
+  footer .bar-code img {
+    max-width: 130px;
   }
 
 }

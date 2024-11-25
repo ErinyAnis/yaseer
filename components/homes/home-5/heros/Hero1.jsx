@@ -8,8 +8,8 @@ export default function Hero1() {
       <div className="container home-content text-end">
         <Image
           src={"/assets/images/logo/yaseer-logo.png"}
-          width="80"
-          height="80"
+          width="100"
+          height="100"
           alt="Yaseer"
           className="wow fadeInDownShort mb-3"
         />

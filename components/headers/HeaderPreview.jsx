@@ -58,7 +58,7 @@ export default function HeaderPreview() {
 
   return (
     <div className="main-nav-sub full-wrapper">
-      {/* Logo  (* Add your text or image to the link tag. Use SVG or PNG image format. 
+      {/* Logo  (* Add your text or image to the link tag. Use SVG or PNG image format.
               If you use a PNG logo image, the image resolution must be equal 200% of the visible logo
               image size for support of retina screens. See details in the template documentation. *) */}
       <div className="nav-logo-wrap local-scroll">
@@ -98,16 +98,17 @@ export default function HeaderPreview() {
           {/* End Item */}
 
           {/* Item */}
-          <li>
-            <a className="mn-has-sub">المنتجات</a>
-          </li>
+          {/* <li>
+            <a className="mn-has-sub">الخدمات</a>
+          </li> */}
           {/* End Item */}
 
           {/* Item */}
-          <li>
+          {/* <li>
             <a className="mn-has-sub">الأسعار</a>
-          </li>
+          </li> */}
           {/* End Item */}
+
           {/* Item */}
           <li>
             <Link href="/about">
@@ -121,6 +122,7 @@ export default function HeaderPreview() {
             </Link>
           </li>
           {/* End Item */}
+
           {/* Item */}
           <li>
             <Link href="/contactUs">
@@ -134,10 +136,26 @@ export default function HeaderPreview() {
             </Link>
           </li>
           {/* End Item */}
+
+          {/* Item */}
+          <li className="jobs">
+            <Link
+              href="/jobs"
+              className="btn btn-mod btn-medium btn-round btn-hover-anim"
+            >
+              <span
+                className={`mn-has-sub {
+                ${pathname === "/jobs" ? "active" : ""}`}
+              >
+                التوظيف و التدريب
+              </span>
+            </Link>
+          </li>
+          {/* End Item */}
         </ul>
         <ul className="items-end clearlist">
           {/* Languages */}
-          <LanguageSelect />
+          {/* <LanguageSelect /> */}
           {/* End Languages */}
         </ul>
       </div>
