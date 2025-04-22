@@ -1,9 +1,10 @@
 "use client";
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 export default function NewsLetter() {
   return (
-    <div className="main-sec-padding pt-0">
+    <div className="main-sec-padding pt-0 newsLetter">
       <div className="container">
         <div className="home-contact-sec">
           <div className="d-flex flex-column flex-lg-row gap-3 align-items-lg-center justify-content-between flex-wrap wow fadeInUp">
@@ -21,9 +22,9 @@ export default function NewsLetter() {
                 <span>لا تترددوا في الاتصال بنا.</span>
               </h2>
             </div>
-            <a className="btn btn-mod btn-color btn-large wow fadeInDownShort btn-round btn-hover-anim">
+            <Link href={"/contactUs"} className="btn btn-mod btn-color btn-large wow fadeInDownShort btn-round btn-hover-anim contact-btn">
               <span>اطلب خدمة</span>
-            </a>
+            </Link>
           </div>
         </div>
       </div>

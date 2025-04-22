@@ -95,7 +95,7 @@ export default function RootLayout({ children }) {
           </div>
         </main>
         {/* Footer */}
-        <footer className="pt-5 pb-5 footer">
+        <footer className="pt-4 pb-4 footer">
           <FooterPreview />
         </footer>
         {/* End Footer */}

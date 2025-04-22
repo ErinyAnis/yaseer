@@ -51,7 +51,6 @@ export const socialMediaLinks = [
 export const navigationLinks = [
   { href: "/", text: "الرئيسية" },
   { href: "#", text: "المنتجات" },
-  { href: "#", text: "الأسعار" },
   { href: "#", text: "عن الشركة" },
   { href: "#", text: "تواصل معنا" },
 ];
